@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SCT212-0329/2023</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">KARDZ</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+        </div> 
+        <div class="content">
+            <h1>Galaxy IAP <br><span>Development</span> <br>Course</h1>
+            <p class="par">Developing web development and business savy to escalate learners to a higher standard<br>"Experto crede" <br>"Trust the experts". Premising studies on reliable, verifiable sources
+                <br>Maintaining Pre-eminence, via exclusivity </p>
+            <button class="cn"><a href="login.html">JOIN US</a></button>
+            <div class="form">
+                <h2>Login Here</h2>
+                <form id="index-login-form">
+                    <input type="email" name="email" placeholder="Enter Email Here" required>
+                    <input type="password" name="password" placeholder="Enter Password Here" required>
+                    <button type="submit" class="btnn">Login</button>
+                </form>
+                <p class="link">Don't have an account?<br>
+                <a href="login.html">Sign up</a> here</p>
+                <p class="liw">Where did you hear about us from?</p>
+                <div class="icons">
+                    <a href="#" class="feedback-icon"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#" class="feedback-icon"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#" class="feedback-icon"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#" class="feedback-icon"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="#" class="feedback-icon"><ion-icon name="logo-skype"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        <!-- Floating Welcome Screen -->
+        <div id="floating-welcome" class="floating-welcome" style="display: none;">
+            <div class="welcome-content">
+                <h3>Welcome, <span id="username-display"></span></h3>
+                <p>Days since last login: <span id="days-since-login"></span></p>
+                <p><a href="index.html" id="update-username">Check for Updates and discounted offers we provide to our client detail via your account.</a></p>
+                <button class="btnn" onclick="closeFloatingWelcome()">Close</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

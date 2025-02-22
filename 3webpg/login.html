@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login/Signup - KARDZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">KARDZ</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+        </div>
+        <div class="page-content" id="login-content">
+            <div id="welcome-message" style="display: none;">
+                <h1>Welcome, <span id="username-display"></span></h1>
+                <p>Fortune favors the bold! Thank you for starting your web journey with us.</p>
+                <button class="btnn" onclick="logout()">Logout</button>
+            </div>
+            <div id="auth-forms">
+                <h1>Login</h1>
+                <form id="login-form">
+                    <input type="text" name="username" placeholder="Enter Username Here" required>
+                    <input type="email" name="email" placeholder="Enter Email Here" required>
+                    <input type="password" name="password" placeholder="Enter Password Here" required>
+                    <button type="submit" class="btnn">Login</button>
+                </form>
+                <h1>Sign Up</h1>
+                <form id="signup-form">
+                    <input type="text" name="username" placeholder="Choose Username" required>
+                    <input type="email" name="email" placeholder="Enter Email Here" required>
+                    <input type="password" name="password" placeholder="Enter Password Here" required>
+                    <button type="submit" class="btnn">Sign Up</button>
+                </form>
+                <p class="liw">Where did you hear about us from?</p>
+                <div class="icons">
+                    <a href="#" class="feedback-icon"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#" class="feedback-icon"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#" class="feedback-icon"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#" class="feedback-icon"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="#" class="feedback-icon"><ion-icon name="logo-skype"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 KARDZ. All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
